@@ -1,25 +1,29 @@
 {
-  "name": "mern_shopping_list",
+  "name": "pwa",
   "version": "1.0.0",
-  "description": "Shopping list built with the MERN stack",
+  "description": "> Shopping list app built with the MERN stack along with Redux for state management, Reactstrap and react-transition-group.",
   "main": "server.js",
-  "scripts": {
-    "client-install": "npm install --prefix client",
-    "start": "node server",
-    "server": "nodemon server",
-    "client": "npm start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
-  },
-  "author": "Mujahid",
-  "license": "MIT",
   "dependencies": {
     "bcryptjs": "^2.4.3",
-    "concurrently": "^5.1.0",
     "config": "^3.2.5",
     "express": "^4.17.1",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.9.1"
+    "mongoose": "^5.9.1",
+    "path": "^0.12.7"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mujahid122418/test-pwwa.git"
+  },
+  "author": "mujahid",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mujahid122418/test-pwwa/issues"
+  },
+  "homepage": "https://github.com/Mujahid122418/test-pwwa#readme"
 }
