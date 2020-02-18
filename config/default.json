@@ -1,4 +1,5 @@
 {
-  "mongoURI": "mongodb://127.0.0.1:27017/react-pwa",
+
+  "mongoURI":"mongodb+srv://Mujahid:Mujahid_1@cluster0-tbovr.mongodb.net/pwa",
   "jwtSecret": "sl_myJwtSecret"
 }
