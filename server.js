@@ -35,6 +35,7 @@ if (process.env.NODE_ENV === 'production') {
     res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
   });
 }
+
 app.use(express.static('./pwa/build'));
 const port = process.env.PORT || 5000;
 
