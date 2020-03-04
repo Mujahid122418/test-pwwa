@@ -4,10 +4,11 @@ const path = require('path');
 const config = require('config');
 
 const app = express();
-
+var morgan = require('morgan')
 // Bodyparser Middleware
 app.use(express.json());
 
+app.use(morgan("dev"));
 // DB Config
 const db = config.get('mongoURI');
 
@@ -36,7 +37,7 @@ if (process.env.NODE_ENV === 'production') {
   });
 }
 
-app.use(express.static('./pwa/build'));
-const port = process.env.PORT || 5000;
+//app.use(express.static('./pwa/build'));
+const port = process.env.PORT || 5001;
 
 app.listen(port, () => console.log(`Server started on port ${port}`));

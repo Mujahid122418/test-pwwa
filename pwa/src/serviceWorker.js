@@ -1,3 +1,6 @@
+
+
+
 // This optional code is used to register a service worker.
 // register() is not called by default.
 
@@ -9,6 +12,9 @@
 
 // To learn more about the benefits of this model and instructions on how to
 // opt-in, read https://bit.ly/CRA-PWA
+
+//import * as Dexie from  './dexie.min.js';
+
 
 const isLocalhost = Boolean(
   window.location.hostname === 'localhost' ||
@@ -30,10 +36,10 @@ export function register(config) {
       // serve assets; see https://github.com/facebook/create-react-app/issues/2374
       return;
     }
-
+    
     window.addEventListener('load', () => {
       const swUrl = `${process.env.PUBLIC_URL}/service-worker.js`;
-
+      console.log('I am a request with url: ')
       if (isLocalhost) {
         // This is running on localhost. Let's check if a service worker still exists or not.
         checkValidServiceWorker(swUrl, config);
@@ -52,6 +58,8 @@ export function register(config) {
       }
     });
   }
+
+
 }
 
 function registerValidSW(swUrl, config) {
@@ -139,3 +147,6 @@ export function unregister() {
       });
   }
 }
+
+
+

@@ -13,6 +13,12 @@ const initialState = {
 export default function(state = initialState, action) {
   switch (action.type) {
     case GET_ITEMS:
+      //get items
+      // let name = action.payload.map((item)=>{
+      //   return item.name
+      // })
+      // localStorage.setItem('item', name);
+  
       return {
         ...state,
         items: action.payload,
